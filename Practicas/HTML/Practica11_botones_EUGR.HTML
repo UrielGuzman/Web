@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>
+		Botones
+		</title>
+	</head>
+
+	<body>
+	
+	<form>
+	<p>
+	Nombre: <input type="text" name="nombre" required>
+	Sexo: 
+	<input type="radio" name="hm" value"h" required> Hombre
+	<input type="radio" name="hm" value"m" required> Mujer
+	</p>
+
+	<!--El atributo placeholder permite mostrar en los controles de un texto un texto que desaparece-->
+
+	<p>
+	Apellidos: <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos">
+
+	Correo: <input type="email" name="correo" size="40">
+	</p>
+
+	Fecha:
+	<input type="date" name="fecha1" size="20">
+	<br><br>
+	Mes:
+	<input type="month" name="fecha2" size="20">
+	<br><br>
+	Semana:
+	<input type="week" name="fecha3" size="20">
+	<br><br>
+	Escriba un numero:
+	<br><br>
+	<input type="number" name="numero">	
+	<br><br>
+
+	<input type="text" name="texto" value="A que no me cambias" readonly>
+	<br><br>
+
+	<input type="text" name="texto1" value="acceso con a" acceskey="a">
+	<input type="text" name="texto2" value="acceso con i" acceskey="i">
+	<input type="text" name="texto3" value="acceso con o" acceskey="o">
+	<input type="text" name="texto4" value="acceso con u" acceskey="u">
+	<br><br>
+
+	Elija un color:<input type="color" name="color">
+	<br><br>
+
+	Elija un color:<input type="color" name="color" value=#ff0000>
+	<br><br>
+
+	Elija un rango:<input type="range" name="rango">
+	<br><br>
+
+	indique su nivel(de 1 a 10, de 3 en 3): <input type="range" name="rango" min="1" max="10" step="3">
+	<br><br>
+	
+	indique su nivel(de 0 a 1, de 0.1 en 0.1): <input type="range" name="rango" min="0" max="1" step="0.1">
+	<br><br>
+
+
+	indique su nivel(Malo, Regular, Bueno): <input type="range" name="rango" min="0" max="2" list="lista-rango">
+	<datalist id="lista-rango">
+	<option value="1" label="Malo"></option>
+	<option value="2" label="Regular"></option>
+	<option value="3" label="Bueno"></option>
+	</datalist>
+	<br><br>
+
+	<input type="submit" value="Enviar">
+	<input type="Reset" value="Borrar">
+	<br><br>
+
+	<input type="submit" value="Enviar" disabled>
+	<br><br>
+	<input type="button" value="Este boton no hace nada">
+	<br><br>
+	<button type"submit"><img src="Imagenes\check.png" alt="imagen" width="32" height="32"><br>Enviar</button>
+	<button type"reset"><img src="Imagenes\cancel.jfif" alt="imagen" width="32" height="32"><br>Borrar</button>
+	
+	</form>
+	
+
+	<p style="text-align:right;"><a href="..\practica3_portada_EUGR.HTML" target=principal>Regresar</a>
+
+	</body>
+
+</html>

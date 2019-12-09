@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+<title>EJEMPLO DEL MANEJO DE CSS</title>
+<link rel="stylesheet" type="text/css" href="" id="lnkCSS" />
+<script type="text/javascript">
+<!--
+	var slcCSS;
+	var lnkCSS;
+	function slcCSS_onChange(){
+		lnkCSS.href = slcCSS.options[slcCSS.selectedIndex].value;
+		}
+		function cssExample_onLoad(){
+			slcCSS=document.getElementById("slcCSS");
+			lnkCSS=document.getElementById("lnkCSS"); 
+			}
+			window.onload=cssExample_onLoad;
+-->
+</script>
+</head>
+
+<body>
+	<form method="post" name="frmCSS">
+    <h1><blink id="blink">USO DE CSS </blink></h1>
+    <br><br><br>
+    <div class="lblNormal">
+    Tema/Estilo/CSS:
+    <select class="cmbNormal" name="slcCSS" id="slcCSS" onChange="slcCSS_onChange()" >
+    <option id="styleNone" value="" selected>Ninguno</option>
+    <option id="style1" value="Styles/style1.css">
+    Paisaje</option>
+    <option id="style2" value="Styles/style2.css">
+    Japon</option>
+    <option id="style3" value="Styles/style3.css">
+    Flores de colores</option>
+    <option id="style4" value="Styles/style4.css">
+    Camioneta</option>
+    <option id="style5" value="Styles/style5.css">
+    Last</option>
+    </select>
+    </div>
+    <br><br><br><br>
+    <div class="lblNormal">
+ 
+    </ol>
+    </form>
+
+<br><br>
+<p style="text-align:right;"><a href="..\practica3_portada_EUGR.HTML" target=principal>Regresar</a>	
+
+</body>
+</html>

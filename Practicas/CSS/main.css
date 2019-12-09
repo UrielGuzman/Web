@@ -1,0 +1,38 @@
+			body{
+				background-image:url(Imagenes/fondo.jpg);
+				font-family:Arial;
+			}
+			h1{
+				border-bottom:dotted 2px #CCC;
+				text-align: center;
+				padding-bottom:10px;
+			}
+			
+			a{
+				background-color: red;
+				color: white;
+				text-decoration:none;
+				padding: 10px;
+			}
+
+			a:hover{
+				background-color: blue;
+			}
+			#main-container{
+				align: center
+				width:500px;
+				margin:40px auto;
+			}
+			#content{
+				width: 500px;
+				background-color:white;
+				padding-bottom: 50px;
+			}
+			#descripcion{
+				color:#666;
+				font-size: 0.8125em;	
+			}
+			#boton-content{
+				text-align:center;	
+				padding: 10px;
+			}

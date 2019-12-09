@@ -1,0 +1,5 @@
+<p><b>uriel</b> (<a href=\mailto:test@hotmail.com">test@hotmail.com</a>) wrote on <i>19-11-01</i>;<br>lkmadslkdmald</p>
+ 
+ <p><b>Test2</b> (<a href=\mailto:test2@hotmail.com">test2@hotmail.com</a>) wrote on <i>19-11-01</i>;<br>Test2</p>
+ 
+ <p><b>Test</b> (<a href=\mailto:test@hotmail.com">test@hotmail.com</a>) wrote on <i>19-11-01</i>;<br>Teste</p>

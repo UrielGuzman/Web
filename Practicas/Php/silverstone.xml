@@ -1,0 +1,25 @@
+﻿<rss version="0,91">
+	<channel>
+		<title>Escritor Patrick Rothfuss</title>
+		<link>https://www.patrickrothfuss.com/content/index.asp</link>
+		<description>Servidor para mis lectores</description>
+		<language>es</language>
+		<copyright>Patrick Rothfuss</copyright>
+		<item>
+			<title>Para mis amados lectores</title>
+			<description>Ultimos libros</description>
+			<link>https://www.patrickrothfuss.com/content/books.asp</link>
+		</item>
+		<item>
+			<title>Fama</title>
+			<description>Reviews</description>
+			<link>https://www.patrickrothfuss.com/content/reviews.asp/</link>
+		</item>
+		<item>
+			<title>Mi mundo creado</title>
+			<description>Este mundo siempre estuvo en mi mente</description>
+			<link>https://www.patrickrothfuss.com/content/world.asp</link>
+		</item>
+	</channel>
+</rss>
+					

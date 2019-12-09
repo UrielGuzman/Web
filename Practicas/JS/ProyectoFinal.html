@@ -1,0 +1,204 @@
+<HTML>
+
+<head> <title></title> <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<script language "javascript" type "text/javascript">
+function validar() {	  
+ var test;
+test = document.form1.nacimiento.value;
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = yyyy + '-' + mm + '-' + dd;
+	if(document.form1.fecha.value<today) { 
+		alert('Por favor corregir el campo Fecha, solo se admite fechas apartir del dia de hoy.');
+		document.form1.fecha.focus();
+      return false
+	}
+
+var er_Nombre  = /^([a-z\A-Z\á\é\í\ó\ú\ñ\ü\s\.])+$/ 
+	if(!er_Nombre.test(document.form1.nombre.value)|| document.form1.nombre.value==" "|| document.form1.nombre.value=="  "|| document.form1.nombre.value=="   ") { 
+		alert('Por favor corregir el campo Nombre Completo.');
+		document.form1.nombre.focus();
+      return false
+	} 
+
+var er_correo  = /^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/
+					
+	if(!er_correo.test(document.form1.email.value)|| document.form1.email.value==" "|| document.form1.email.value=="  "|| document.form1.email.value=="   ") { 
+		alert('Correo electronico no valido');
+		document.form1.email.focus();
+      return false
+	} 
+
+
+var today = new Date();
+var today2 = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+var yyyy2 = (today.getFullYear()-100);
+
+today = yyyy + '-' + mm + '-' + dd;
+today2 = yyyy2 + '-' + mm + '-' + dd;
+
+	if(document.form1.nacimiento.value>today || document.form1.nacimiento.value<today2) { 
+		alert('Por favor corregir el campo Fecha de Nacimiento.');
+		document.form1.nacimiento.focus();
+      return false
+	}
+
+   var er_Edad = /^([0-9\s\+\-])+$/
+
+	if( !er_Edad.test(document.form1.edad.value) ) {   
+
+        alert('Contenido del campo EDAD no válido - POR FAVOR INTRODUCE SOLO NUMEROS.');
+
+		document.form1.edad.focus();
+
+        return false; 
+
+    }   
+
+	if(document.form1.Edad.value<=0 || document.form1.Edad.value>=100){
+
+		alert('Edad No valida, la edad debe ser entre 20 y 45 años');
+
+		document.form1.Edad.focus();
+
+        return false; 
+
+	}
+
+
+var letras  = /^([a-z\A-Z\á\é\í\ó\ú\ñ\ü\s\.])+$/ 
+
+if(!letras.test(document.form1.genero.value)|| document.form1.genero.value==" "|| document.form1.genero.value=="  "|| document.form1.genero.value=="   ") { 
+		alert('Por favor corregir el campo Genero, solo se admiten letras.');
+		document.form1.genero.focus();
+      return false
+	} 
+
+
+	if(!letras.test(document.form1.ocupacion.value)|| document.form1.ocupacion.value==" "|| document.form1.ocupacion.value=="  "|| document.form1.ocupacion.value=="   ") { 
+		alert('Por favor corregir el campo Ocupacion, solo se admiten letras.');
+		document.form1.ocupacion.focus();
+      return false
+	} 
+
+
+  	if(!letras.test(document.form1.nacionalidad.value)|| document.form1.nacionalidad.value==" "|| document.form1.nacionalidad.value=="  "|| document.form1.nacionalidad.value=="   ") { 
+		alert('Por favor corregir el campo Nacionalidad, solo se admiten letras.');
+		document.form1.nacionalidad.focus();
+      return false
+	} 
+
+	if(!letras.test(document.form1.religion.value)|| document.form1.religion.value==" "|| document.form1.religion.value=="  "|| document.form1.religion.value=="   ") { 
+		alert('Por favor corregir el campo Religion, solo se admiten letras.');
+		document.form1.religion.focus();
+      return false
+	} 
+
+var Telefono = /^([0-9\s\+\-])+$/ 
+
+	if(!Telefono.test(document.form1.telefono.value)|| document.form1.telefono.value==" "|| document.form1.telefono.value=="  "|| document.form1.telefono.value=="   ") { 
+		alert('Por favor corregir el campo Telefono.');
+		document.form1.telefono.focus();
+      return false
+	} 
+
+var Direccion= /^([a-z\0-9\A-Z\á\é\í\ó\ú\ñ\ü\s\.\-])+$/
+
+	if(!Direccion.test(document.form1.domicilio.value)|| document.form1.domicilio.value==" "|| document.form1.domicilio.value=="  "|| document.form1.domicilio.value=="   ") { 
+		alert('Por favor corregir el campo Direccion, tiene caracteres incorrectos.');
+		document.form1.domicilio.focus();
+      return false
+	} 
+
+	if(!Telefono.test(document.form1.telemergencia.value)|| document.form1.telemergencia.value==" "|| document.form1.telemergencia.value=="  "|| document.form1.telemergencia.value=="   ") { 
+		alert('Por favor corregir el campo Telefono De Emergencia.');
+		document.form1.telemergencia.focus();
+      return false
+	} 
+
+	if(!er_Nombre.test(document.form1.contactoemergencia.value)|| document.form1.contactoemergencia.value==" "|| document.form1.contactoemergencia.value=="  "|| document.form1.contactoemergencia.value=="   ") { 
+		alert('Por favor corregir el campo Contacto De Emergencia.');
+		document.form1.contactoemergencia.focus();
+      return false
+	} 
+
+}
+
+  </script>  
+</head>
+<body>
+
+	<font size = 16 ><center>Historial Clinico</center></font>
+	<div align = "center">
+	<form onsubmit="return validar();"; action="" method="post" name="form1" id="form1" >
+	<form action="" method="POST" id="form1" name="form1">
+	<table align="center" border=3 cellpadding=12 cellspacing=6 height =90%>
+		
+		
+		<tr  >
+			<td>Fecha:<input type ="date" name ="fecha" size="20"></td>
+		</tr>
+		
+		<tr  >
+			<td>Nombre Completo:<input type ="text" name ="nombre" requiered></td>
+		</tr>
+		<tr  >
+			<td>Email: <input type ="text" name ="email" requiered></td>
+		</tr>
+		<tr  >		
+			<td>Fecha de nacimiento:<input type ="date" name ="nacimiento" size="20"></td>
+		</tr>
+		<tr  >
+			<td>Edad:<input type ="int" name ="edad" requiered></td>
+		</tr>
+		<tr  >
+			<td>Genero:<input type ="text" name ="genero" requiered></td>
+		</tr>
+		<tr  >
+			<td>Ocupacion: <input type ="text" name ="ocupacion" requiered></td>
+		</tr>
+		<tr  >
+			<td>Lateralidad: <input type ="text" name ="lateralidad" requiered></td>
+		</tr>
+		<tr  >
+			<td>Nacionalidad: <input type ="text" name ="nacionalidad" requiered></td>
+		</tr>
+		<tr  >
+			<td>Religion: <input type ="text" name ="religion" requiered></td>
+		</tr>
+		<tr  >
+			<td>Telefono: <input type ="int" name ="telefono" requiered></td>
+		</tr>
+		<tr  >
+			<td>Domicilio: <input type ="text" name ="domicilio" requiered></td>
+		</tr>
+				<tr  >
+			<td>Telefono De Emergencia: <input type ="int" name ="telemergencia" requiered></td>
+		</tr>
+		<tr  >
+			<td>Persona a contactar en caso de emergencia: <input type ="text" name ="contactoemergencia" requiered></td>
+		</tr>
+		<tr>
+				<td><table ><tr  >
+				<td><input type="Submit" value="Enviar"></td>
+				<td><input type="Reset" value="Borrar"></td>
+			</tr></table></td>
+		</tr>
+		</form>
+	</table>
+	</div>
+<br><br>
+<p style="text-align:right;"><a href="..\practica3_portada_EUGR.HTML" target=principal>Regresar</a>	
+
+</body>
+
+</HTML>
+
